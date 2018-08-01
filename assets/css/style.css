@@ -80,8 +80,6 @@ header .container {
 .nav ul li a {
 	color: #b1adb3;
 	text-decoration: none;
-	-webkit-transition: color .4s;
-	transition: color .4s;
 }
 
 .nav ul li+li {
@@ -118,70 +116,44 @@ header .container {
 	margin-bottom: 2em;
 }
 
-img.headshot {
+img.profile {
 	float: left;
 	padding: 0 1em 1em 0;
 	width: 200px;
 	height: 200px;
 }
 
+
 .portfolio-item {
-	display: inline-block;
+	display: inline-table;
 	position: relative;
-	width: 270px;
+	width: 200px;	
 	height: 200px;
-	transition: transform .2s ease-out;
 }
 
-.portfolio-item:nth-child(even) {
-	margin-left: 25px;
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.item-name {
-	position: relative;
-	top: -100px;
-	text-align: center;
-	background-color: #4aaaa5;
-	padding: 1em;
-	color: #ffffff;
-	z-index: 1000;
+input[type=message], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	box-sizing: border-box;
+	height: 200px
 }
 
-/* Contact Page */
-.contact {
-	width: 540px;
-}
-
-.contact label {
-	display: block;
-	padding-bottom: 0.5em;
-}
-
-.contact input, .contact textarea {
-	width: 100%;
-	border: 1px solid #cccccc;
-	margin-bottom: 1.5em;
-	padding: 1em;
-	font-size: .9em;
-}
-
-.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
-    color: #cccccc;
-}
-
-.contact input::-moz-placeholder, .contact textarea::-moz-placeholder {
-    color: #cccccc;
-}
-
-.contact input::-ms-placeholder, .contact textarea::-ms-placeholder {
-    color: #cccccc;
-}
-
-.contact input::placeholder, .contact textarea::placeholder {
-    color: #cccccc;
-}
-
-.contact input[type="submit"] {
+input[type="submit"] {
 	width: auto;
 	background-color: #4aaaa5;
 	color: #ffffff;
@@ -193,7 +165,7 @@ img.headshot {
 
 /* Footer */
 footer {
-	position: absolute;
+	position: relative;
 	left: 0;
 	bottom: 0;
 	width: 100%;
